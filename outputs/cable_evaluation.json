@@ -1,0 +1,38 @@
+{
+  "category": "cable",
+  "n_test": 150,
+  "n_normal": 58,
+  "n_defect": 92,
+  "image_threshold": 0.1783618561923504,
+  "pixel_threshold": 0.16974464058876038,
+  "image_auroc": 0.47919790104947524,
+  "precision": 1.0,
+  "recall": 0.03260869565217391,
+  "f1": 0.06315789473684211,
+  "confusion_matrix": [
+    [
+      58,
+      0
+    ],
+    [
+      89,
+      3
+    ]
+  ],
+  "accuracy": 0.4066666666666667,
+  "pixel_auroc": 0.6919000538727168,
+  "mean_iou": 0.000559388131090771,
+  "mean_dice": 0.0010640179528833796,
+  "inference_ms_per_image": 3.9909003999976753,
+  "per_defect_type_mean_score": {
+    "bent_wire": 0.1148369312286377,
+    "cable_swap": 0.12804241478443146,
+    "combined": 0.10508871078491211,
+    "cut_inner_insulation": 0.15002520382404327,
+    "cut_outer_insulation": 0.16841568052768707,
+    "good": 0.13305379450321198,
+    "missing_cable": 0.10131260752677917,
+    "missing_wire": 0.11887530237436295,
+    "poke_insulation": 0.13493843376636505
+  }
+}

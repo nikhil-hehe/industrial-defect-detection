@@ -1,0 +1,35 @@
+{
+  "category": "carpet",
+  "n_test": 117,
+  "n_normal": 28,
+  "n_defect": 89,
+  "image_threshold": 0.04272155836224556,
+  "pixel_threshold": 0.04252651333808899,
+  "image_auroc": 0.518860353130016,
+  "precision": 0.825,
+  "recall": 0.7415730337078652,
+  "f1": 0.7810650887573964,
+  "confusion_matrix": [
+    [
+      14,
+      14
+    ],
+    [
+      23,
+      66
+    ]
+  ],
+  "accuracy": 0.6837606837606838,
+  "pixel_auroc": 0.7896859484540523,
+  "mean_iou": 0.2565526064172049,
+  "mean_dice": 0.35605591065009484,
+  "inference_ms_per_image": 4.210309538440272,
+  "per_defect_type_mean_score": {
+    "color": 0.05396011099219322,
+    "cut": 0.06505554914474487,
+    "good": 0.05972250923514366,
+    "hole": 0.06407251954078674,
+    "metal_contamination": 0.04111122712492943,
+    "thread": 0.06403255462646484
+  }
+}

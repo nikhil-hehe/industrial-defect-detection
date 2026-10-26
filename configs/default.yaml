@@ -1,0 +1,31 @@
+# ---------- Data ----------
+data_root: data/raw/mvtec_anomaly_detection   # folder that contains bottle/, screw/, ...
+category: bottle                              # try: bottle, screw, leather, hazelnut, ...
+img_size: 256
+val_split: 0.1                                # fraction of normal train images held out
+augment: true                                 # light hflip augmentation (train only)
+num_workers: 2
+
+# ---------- Model ----------
+latent_channels: 128    # guide baseline = 128 (128x32x32). Lower (16-32) = stronger bottleneck,
+                        # which often stops the AE from reconstructing defects "too well".
+noise_std: 0.0          # >0 turns it into a denoising autoencoder (e.g. 0.05)
+
+# ---------- Training ----------
+epochs: 50
+batch_size: 16
+lr: 0.001
+weight_decay: 0.0
+patience: 10            # early stopping on validation loss
+seed: 42
+amp: true               # mixed precision on CUDA
+
+# ---------- Scoring / thresholds ----------
+smooth_sigma: 4.0              # gaussian smoothing of the anomaly map
+score_percentile: 99.0         # image score = this percentile of the smoothed map
+threshold_percentile: 95.0     # image threshold = this percentile of NORMAL validation scores
+pixel_threshold_percentile: 99.5   # pixel threshold = this percentile of NORMAL validation pixels
+
+# ---------- Output ----------
+ckpt_dir: models/checkpoints
+out_dir: outputs

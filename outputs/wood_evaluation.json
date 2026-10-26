@@ -1,0 +1,35 @@
+{
+  "category": "wood",
+  "n_test": 79,
+  "n_normal": 19,
+  "n_defect": 60,
+  "image_threshold": 0.027064600493758917,
+  "pixel_threshold": 0.027021043002605438,
+  "image_auroc": 0.9815789473684211,
+  "precision": 1.0,
+  "recall": 0.85,
+  "f1": 0.918918918918919,
+  "confusion_matrix": [
+    [
+      19,
+      0
+    ],
+    [
+      9,
+      51
+    ]
+  ],
+  "accuracy": 0.8860759493670886,
+  "pixel_auroc": 0.8215737575564603,
+  "mean_iou": 0.29302499341594773,
+  "mean_dice": 0.4123972447052514,
+  "inference_ms_per_image": 4.830155582325621,
+  "per_defect_type_mean_score": {
+    "color": 0.03430306538939476,
+    "combined": 0.04389304295182228,
+    "good": 0.020361091941595078,
+    "hole": 0.04138151928782463,
+    "liquid": 0.02496938407421112,
+    "scratch": 0.03828427568078041
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "category": "screw",
+  "n_test": 160,
+  "n_normal": 41,
+  "n_defect": 119,
+  "image_threshold": 0.05215217974036932,
+  "pixel_threshold": 0.048023492097854614,
+  "image_auroc": 0.7177700348432056,
+  "precision": 0.9285714285714286,
+  "recall": 0.1092436974789916,
+  "f1": 0.19548872180451127,
+  "confusion_matrix": [
+    [
+      40,
+      1
+    ],
+    [
+      106,
+      13
+    ]
+  ],
+  "accuracy": 0.33125,
+  "pixel_auroc": 0.9662663116958661,
+  "mean_iou": 0.04788142816097788,
+  "mean_dice": 0.08147323995516641,
+  "inference_ms_per_image": 4.044613325015689,
+  "per_defect_type_mean_score": {
+    "good": 0.039667464792728424,
+    "manipulated_front": 0.04317311570048332,
+    "scratch_head": 0.044017598032951355,
+    "scratch_neck": 0.04227551445364952,
+    "thread_side": 0.043034348636865616,
+    "thread_top": 0.047463130205869675
+  }
+}
