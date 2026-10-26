@@ -1,3 +1,0 @@
-dataset in this directory.
-
-Dataset : https://www.mvtec.com/company/research/datasets/mvtec-ad/downloads
